@@ -1,0 +1,23 @@
+TECNOCAMPUS FORMACIÓN
+Práctica evaluable de HTML y CSS
+
+INICIO
+Abre el archivo index.html desde esta carpeta. No es necesario instalar nada.
+
+ESTRUCTURA
+- index.html: página de inicio.
+- ciclos.html: ciclos formativos.
+- cursos.html: cursos de especialización.
+- horarios.html: horarios y modalidades.
+- contacto.html: contacto y formulario.
+- css/estilos.css: hoja de estilos común.
+- img/aula-informatica.webp: imagen de la portada.
+
+COMPROBACIONES
+- Todas las rutas son relativas.
+- El menú lateral enlaza las cinco páginas y mantiene el mismo orden.
+- La web utiliza HTML semántico y CSS Grid.
+- El diseño se adapta a escritorio, tableta y móvil.
+- El formulario incluye etiquetas, campos obligatorios y botones de envío y borrado.
+
+Proyecto académico ficticio. Sustituye el nombre del alumno/a antes de entregarlo si el profesor lo solicita.

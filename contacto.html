@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacto y solicitud de información de TecnoCampus Formación.">
+  <title>TecnoCampus Formación</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="cabecera-contenido">
+      <div class="logo">
+        <span class="logo-iniciales" aria-hidden="true">TC</span>
+        <div>
+          <p class="nombre-empresa">TecnoCampus Formación</p>
+          <p class="lema">Tecnología que se aprende haciendo</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="contenedor">
+    <nav class="menu" aria-label="Navegación principal">
+      <h2>Menú</h2>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="ciclos.html">Ciclos FP</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="horarios.html">Horarios</a></li>
+        <li><a class="activo" href="contacto.html" aria-current="page">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <p class="subtitulo">Estamos para ayudarte</p>
+      <h1>Contacto</h1>
+      <p class="introduccion">Cuéntanos qué quieres aprender. El equipo de orientación responderá a tu solicitud con las opciones disponibles.</p>
+
+      <section class="panel" aria-labelledby="datos-centro">
+        <h2 id="datos-centro">TecnoCampus Formación</h2>
+        <address>
+          Calle de la Innovación, 24 · 28037 Madrid<br>
+          Teléfono: <a href="tel:+34910000000">91 000 00 00</a><br>
+          Correo: <a href="mailto:info@tecnocampus-formacion.example">info@tecnocampus-formacion.example</a>
+        </address>
+        <p><strong>Horario:</strong> de lunes a viernes, de 09:00 a 18:00.</p>
+        <p><a href="https://www.todofp.es/" target="_blank" rel="noopener noreferrer">Consultar información oficial sobre Formación Profesional</a>.</p>
+      </section>
+
+      <section aria-labelledby="solicitud">
+        <h2 id="solicitud">Solicitud de información</h2>
+        <p>Los campos marcados con <span class="obligatorio">*</span> son obligatorios.</p>
+        <form class="formulario" action="#" method="get">
+          <fieldset>
+            <legend>Datos personales</legend>
+            <div class="campos">
+              <div class="campo">
+                <label for="nombre">Nombre <span class="obligatorio">*</span></label>
+                <input type="text" id="nombre" name="nombre" autocomplete="given-name" required>
+              </div>
+              <div class="campo">
+                <label for="apellidos">Apellidos <span class="obligatorio">*</span></label>
+                <input type="text" id="apellidos" name="apellidos" autocomplete="family-name" required>
+              </div>
+              <div class="campo">
+                <label for="correo">Correo electrónico <span class="obligatorio">*</span></label>
+                <input type="email" id="correo" name="correo" autocomplete="email" required>
+              </div>
+              <div class="campo">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" autocomplete="tel" pattern="[0-9+() -]{9,20}">
+              </div>
+              <div class="campo campo-completo">
+                <label for="localidad">Localidad <span class="obligatorio">*</span></label>
+                <input type="text" id="localidad" name="localidad" autocomplete="address-level2" required>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Formación de interés</legend>
+            <div class="campos">
+              <div class="campo">
+                <label for="tipo-formacion">Tipo de formación <span class="obligatorio">*</span></label>
+                <select id="tipo-formacion" name="tipo_formacion" required>
+                  <option value="">Selecciona una opción</option>
+                  <option value="ciclo">Ciclo formativo</option>
+                  <option value="curso">Curso técnico</option>
+                  <option value="empresa">Formación para empresas</option>
+                  <option value="orientacion">Orientación académica</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="nivel">Nivel previo</label>
+                <select id="nivel" name="nivel">
+                  <option value="sin-experiencia">Sin experiencia</option>
+                  <option value="basico">Conocimientos básicos</option>
+                  <option value="medio">Nivel intermedio</option>
+                  <option value="avanzado">Nivel avanzado</option>
+                </select>
+              </div>
+              <div class="campo campo-completo">
+                <label for="programa">Programa o área que te interesa</label>
+                <input type="text" id="programa" name="programa" placeholder="Ejemplo: ASIR, Linux o desarrollo web">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Preferencias de contacto</legend>
+            <p class="titulo-campo" id="modalidad-label">Modalidad preferida</p>
+            <div class="opciones" role="group" aria-labelledby="modalidad-label">
+              <label for="modalidad-presencial"><input type="radio" id="modalidad-presencial" name="modalidad" value="presencial" checked> Presencial</label>
+              <label for="modalidad-online"><input type="radio" id="modalidad-online" name="modalidad" value="online"> En línea</label>
+              <label for="modalidad-semipresencial"><input type="radio" id="modalidad-semipresencial" name="modalidad" value="semipresencial"> Semipresencial</label>
+            </div>
+            <p class="titulo-campo" id="contacto-label">Medio de contacto</p>
+            <div class="opciones" role="group" aria-labelledby="contacto-label">
+              <label for="contacto-correo"><input type="checkbox" id="contacto-correo" name="medio_contacto" value="correo" checked> Correo electrónico</label>
+              <label for="contacto-telefono"><input type="checkbox" id="contacto-telefono" name="medio_contacto" value="telefono"> Teléfono</label>
+            </div>
+            <div class="campo">
+              <label for="franja">Franja horaria preferida</label>
+              <select id="franja" name="franja">
+                <option value="manana">Mañana</option>
+                <option value="tarde">Tarde</option>
+                <option value="indiferente">Indiferente</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Mensaje y condiciones</legend>
+            <div class="campo">
+              <label for="mensaje">Mensaje <span class="obligatorio">*</span></label>
+              <textarea id="mensaje" name="mensaje" placeholder="Indica tus dudas, objetivos o disponibilidad" required></textarea>
+            </div>
+            <div class="opciones">
+              <label for="privacidad">
+                <input type="checkbox" id="privacidad" name="privacidad" value="aceptada" required>
+                He leído y acepto la política de privacidad <span class="obligatorio">*</span>
+              </label>
+            </div>
+            <div class="opciones">
+              <label for="novedades">
+                <input type="checkbox" id="novedades" name="novedades" value="si">
+                Quiero recibir información sobre próximos cursos.
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="botones">
+            <button class="boton-enviar" type="submit">Enviar solicitud</button>
+            <button class="boton-borrar" type="reset">Borrar formulario</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <aside class="lateral">
+      <h2>Atención personalizada</h2>
+      <p>Respondemos normalmente en un plazo de uno o dos días laborables.</p>
+      <p class="aviso"><strong>Cita de orientación</strong><br>Presencial o por videollamada.</p>
+      <p>El centro, los datos y los canales de contacto de esta práctica son ficticios.</p>
+    </aside>
+  </div>
+
+  <footer class="pie">
+    <div class="pie-contenido">
+      <p>&copy; 2026 TecnoCampus Formación</p>
+      <p>Proyecto educativo ficticio · Madrid</p>
+    </div>
+  </footer>
+</body>
+</html>

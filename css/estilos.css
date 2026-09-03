@@ -1,0 +1,408 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f2f2f2;
+  color: #222222;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #145c8e;
+}
+
+h1,
+h2,
+h3 {
+  color: #164d73;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 32px;
+}
+
+h2 {
+  margin-top: 28px;
+  font-size: 23px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+/* Cabecera */
+.cabecera {
+  background-color: #164d73;
+  color: white;
+  border-bottom: 5px solid #e58b2a;
+}
+
+.cabecera-contenido {
+  width: 90%;
+  max-width: 1150px;
+  margin: auto;
+  padding: 22px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-iniciales {
+  display: block;
+  padding: 8px;
+  background-color: white;
+  color: #164d73;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nombre-empresa {
+  margin: 0;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.lema {
+  margin: 3px 0 0;
+  color: #d9edf7;
+}
+
+/* Estructura principal con CSS Grid */
+.contenedor {
+  display: grid;
+  grid-template-columns: 190px 1fr 230px;
+  gap: 20px;
+  width: 90%;
+  max-width: 1150px;
+  margin: 25px auto;
+  align-items: start;
+}
+
+/* Menú lateral */
+.menu {
+  padding: 12px;
+  background-color: white;
+  border: 1px solid #cccccc;
+}
+
+.menu h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  margin-bottom: 5px;
+  padding: 9px;
+  background-color: #e6f0f6;
+  color: #164d73;
+  border-left: 4px solid #164d73;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #c9e0ee;
+}
+
+.menu a.activo {
+  background-color: #164d73;
+  color: white;
+  border-left-color: #e58b2a;
+}
+
+/* Contenido de las páginas */
+main {
+  min-width: 0;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #cccccc;
+}
+
+.subtitulo {
+  margin: 0 0 5px;
+  color: #287b8f;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.introduccion {
+  margin-bottom: 20px;
+  color: #4c4c4c;
+}
+
+.hero {
+  margin: 0 0 25px;
+  border: 1px solid #aaaaaa;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.hero figcaption {
+  padding: 8px;
+  background-color: #e6f0f6;
+  color: #333333;
+  font-size: 14px;
+}
+
+/* Tarjetas */
+.tarjetas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.tarjeta {
+  padding: 15px;
+  background-color: #fafafa;
+  border: 1px solid #bbbbbb;
+  border-top: 4px solid #287b8f;
+}
+
+.tarjeta h2,
+.tarjeta h3 {
+  margin-top: 5px;
+}
+
+.siglas {
+  display: inline-block;
+  padding: 5px 8px;
+  background-color: #164d73;
+  color: white;
+  font-weight: bold;
+}
+
+.dato {
+  display: inline-block;
+  margin: 2px;
+  padding: 3px 7px;
+  background-color: #d9edf7;
+  color: #164d73;
+  font-size: 14px;
+}
+
+.lista li {
+  margin-bottom: 6px;
+}
+
+.panel {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f7f7f7;
+  border: 1px solid #cccccc;
+}
+
+/* Zona lateral derecha */
+.lateral {
+  padding: 15px;
+  background-color: #fff7e8;
+  border: 1px solid #d2b27c;
+}
+
+.lateral h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.aviso {
+  padding: 10px;
+  background-color: white;
+  border-left: 4px solid #e58b2a;
+}
+
+/* Tablas */
+.tabla-responsive {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+}
+
+caption {
+  padding: 8px;
+  font-weight: bold;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 9px;
+  border: 1px solid #999999;
+  text-align: left;
+}
+
+th {
+  background-color: #164d73;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #eaf2f7;
+}
+
+/* Formulario */
+.formulario {
+  padding: 15px;
+  background-color: #fafafa;
+  border: 1px solid #bbbbbb;
+}
+
+fieldset {
+  margin-bottom: 18px;
+  padding: 15px;
+  border: 1px solid #aaaaaa;
+}
+
+legend,
+label,
+.titulo-campo {
+  color: #164d73;
+  font-weight: bold;
+}
+
+.campos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo-completo {
+  grid-column: 1 / 3;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  margin-top: 4px;
+  padding: 8px;
+  border: 1px solid #888888;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.opciones {
+  margin-bottom: 12px;
+}
+
+.opciones label {
+  display: block;
+  margin-bottom: 6px;
+  color: #222222;
+  font-weight: normal;
+}
+
+.opciones input {
+  width: auto;
+  margin-right: 5px;
+}
+
+.obligatorio {
+  color: #b23321;
+}
+
+.botones {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 9px 14px;
+  border: 1px solid #164d73;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.boton-enviar {
+  background-color: #164d73;
+  color: white;
+}
+
+.boton-borrar {
+  background-color: #e6e6e6;
+  color: #222222;
+}
+
+/* Pie de página */
+.pie {
+  margin-top: 30px;
+  background-color: #164d73;
+  color: white;
+}
+
+.pie-contenido {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1150px;
+  margin: auto;
+  padding: 18px 0;
+}
+
+.pie p {
+  margin: 0;
+}
+
+/* Adaptación para móviles y tabletas */
+@media (max-width: 800px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+  }
+
+  .menu ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+
+  .tarjetas,
+  .campos {
+    grid-template-columns: 1fr;
+  }
+
+  .campo-completo {
+    grid-column: 1;
+  }
+
+  .pie-contenido {
+    display: block;
+  }
+}

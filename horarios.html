@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Horarios y modalidades de TecnoCampus Formación.">
+  <title>TecnoCampus Formación</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="cabecera-contenido">
+      <div class="logo">
+        <span class="logo-iniciales" aria-hidden="true">TC</span>
+        <div>
+          <p class="nombre-empresa">TecnoCampus Formación</p>
+          <p class="lema">Tecnología que se aprende haciendo</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="contenedor">
+    <nav class="menu" aria-label="Navegación principal">
+      <h2>Menú</h2>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="ciclos.html">Ciclos FP</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a class="activo" href="horarios.html" aria-current="page">Horarios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <p class="subtitulo">Organización académica</p>
+      <h1>Horarios y modalidades</h1>
+      <p class="introduccion">La planificación combina clases explicativas, prácticas de laboratorio y trabajo por proyectos.</p>
+
+      <section aria-labelledby="semanal">
+        <h2 id="semanal">Horario semanal orientativo</h2>
+        <div class="tabla-responsive">
+          <table>
+            <caption>Grupo ASIR 1.º · Turno de mañana</caption>
+            <thead><tr><th>Hora</th><th>Lunes</th><th>Martes</th><th>Miércoles</th><th>Jueves</th><th>Viernes</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">08:30–10:20</th><td>Implantación de SO</td><td>Redes</td><td>Bases de datos</td><td>Implantación de SO</td><td>Redes</td></tr>
+              <tr><th scope="row">10:20–10:40</th><td colspan="5">Descanso</td></tr>
+              <tr><th scope="row">10:40–12:30</th><td>Lenguajes de marcas</td><td>Bases de datos</td><td>Redes</td><td>Fundamentos de hardware</td><td>Lenguajes de marcas</td></tr>
+              <tr><th scope="row">12:30–12:50</th><td colspan="5">Descanso</td></tr>
+              <tr><th scope="row">12:50–14:40</th><td>Fundamentos de hardware</td><td>Itinerario laboral</td><td>Implantación de SO</td><td>Redes</td><td>Proyecto intermodular</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section aria-labelledby="modalidades">
+        <h2 id="modalidades">Modalidades disponibles</h2>
+        <div class="tarjetas">
+          <article class="tarjeta"><h3>Presencial</h3><p>Asistencia al centro, uso continuo de laboratorios y contacto directo con el profesorado.</p></article>
+          <article class="tarjeta"><h3>En línea</h3><p>Campus virtual, sesiones en directo, materiales digitales y entregas programadas.</p></article>
+          <article class="tarjeta"><h3>Semipresencial</h3><p>Combina trabajo autónomo en línea con prácticas y tutorías en el centro.</p></article>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="normas">
+        <h2 id="normas">Normas de organización</h2>
+        <ol class="lista">
+          <li>Accede al aula cinco minutos antes del comienzo.</li>
+          <li>Utiliza tu cuenta personal para entrar en los equipos y el campus.</li>
+          <li>Guarda los trabajos en el espacio asignado y realiza copias de seguridad.</li>
+          <li>Comunica las ausencias y consulta las tareas pendientes.</li>
+        </ol>
+      </section>
+    </main>
+
+    <aside class="lateral">
+      <h2>Atención al alumnado</h2>
+      <p><strong>Secretaría:</strong><br>Lunes a viernes, de 09:00 a 14:00.</p>
+      <p><strong>Tutorías:</strong><br>Con cita previa, presenciales o por videollamada.</p>
+      <p class="aviso">Los horarios pueden ajustarse antes del inicio del curso.</p>
+    </aside>
+  </div>
+
+  <footer class="pie">
+    <div class="pie-contenido">
+      <p>&copy; 2026 TecnoCampus Formación</p>
+      <p>Proyecto educativo ficticio · Madrid</p>
+    </div>
+  </footer>
+</body>
+</html>
